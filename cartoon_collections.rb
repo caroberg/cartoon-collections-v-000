@@ -1,4 +1,4 @@
-dwarves = ["Happy", "Mopey", "Dopey", "Grumpy", "Silly", "Crazy", "Lazy"]
+
 
 def roll_call_dwarves(dwarves)
   i = 0
@@ -10,7 +10,12 @@ def roll_call_dwarves(dwarves)
   puts all_the_dwarves
 end
 
-roll_call_dwarves(dwarves) { |i| i < dwarves.length}
+hash = Hash.new
+(dwarves).each_with_index { |dwarve, i|
+  hash[dwarve] = i + 1
+}
+hash   
+
 
 def summon_captain_planet# code an argument here
   # Your code here
