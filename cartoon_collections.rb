@@ -1,4 +1,5 @@
 dwarves = ["Happy", "Mopey", "Dopey", "Grumpy", "Silly", "Crazy", "Lazy"]
+
 def roll_call_dwarves(dwarves)
   i = 0
   all_the_dwarves = []
