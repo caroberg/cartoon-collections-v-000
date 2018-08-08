@@ -1,3 +1,4 @@
+
 def roll_call_dwarves(dwarves)
   i = 0
   all_the_dwarves = []
@@ -7,7 +8,7 @@ def roll_call_dwarves(dwarves)
   end
 end
 
-roll_call_dwarves([dwarves]) { |i| i < dwarves.length}
+roll_call_dwarves(["Happy", "Mopey", "Dopey", "Grumpy", "Silly", "Crazy", "Lazy"]) { |i| i < dwarves.length}
 
 def summon_captain_planet# code an argument here
   # Your code here
