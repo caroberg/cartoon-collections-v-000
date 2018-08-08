@@ -8,8 +8,7 @@ def roll_call_dwarves(dwarves)
   end
 end
 
-
-(dwarves).each_with_index { |dwarve, i| puts "#{i + 1}. #{dwarves[i]}"}
+(dwarves).each_with_index { |dwarve, i| puts "#{dwarves[i]}"}
 
 
 def summon_captain_planet# code an argument here
