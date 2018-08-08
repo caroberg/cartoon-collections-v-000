@@ -1,14 +1,11 @@
 dwarves = ["Happy", "Mopey", "Dopey", "Grumpy", "Silly", "Crazy", "Lazy"]
 
-
 def roll_call_dwarves(dwarves)
   i = 0
   while i < dwarves.length
-    yield(dwarves[i])
+    yield  puts "#{i + 1}. #{dwarves[i]}"
     i += 1
-     puts "#{i}. #{dwarves[i - 1]}"
   end
-
 end
 
 roll_call_dwarves(dwarves) do |i|
