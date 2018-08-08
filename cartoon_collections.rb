@@ -2,12 +2,11 @@ dwarves = ["Happy", "Mopey", "Dopey", "Grumpy", "Silly", "Crazy", "Lazy"]
 
 def roll_call_dwarves(dwarves)
   i = 0
-  all_the_dwarves = []
   while i < dwarves.length
-    all_the_dwarves << yield(dwarves[i])
+    yield(dwarves[i])
     i += 1
   end
-  puts all_the_dwarves
+  puts "#{i + 1}. #{dwarves}"
 end
 
 hash = Hash.new
