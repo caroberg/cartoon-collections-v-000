@@ -14,7 +14,7 @@ hash = Hash.new
 (dwarves).each_with_index { |dwarve, i|
   hash[dwarve] = i + 1
 }
-hash   
+hash
 
 
 def summon_captain_planet# code an argument here
