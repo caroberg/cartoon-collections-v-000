@@ -6,14 +6,11 @@ def roll_call_dwarves(dwarves)
     yield(dwarves[i])
     i += 1
   end
-  puts "#{i + 1}. #{dwarves}"
+  
 end
 
-hash = Hash.new
-(dwarves).each_with_index { |dwarve, i|
-  hash[dwarve] = i + 1
-}
-hash
+
+(dwarves).each_with_index { |dwarve, i| puts "#{i + 1}. #{dwarves[i]}"}
 
 
 def summon_captain_planet# code an argument here
