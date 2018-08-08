@@ -6,11 +6,6 @@ def roll_call_dwarves(dwarves)
     yield  puts "#{i + 1}. #{dwarves[i]}"
     i += 1
   end
-  if dwarves.all?
-    return dwarves
-    else
-    return false
-    end
 end
 
 roll_call_dwarves(dwarves) do |i|
