@@ -6,11 +6,16 @@ def roll_call_dwarves(dwarves)
     yield  puts "#{i + 1}. #{dwarves[i]}"
     i += 1
   end
+  if dwarves.all?
+    return dwarves
+    else
+    return false
+    end
 end
 
 roll_call_dwarves(dwarves) do |i|
   i
-end
+  end
 
 def summon_captain_planet# code an argument here
   # Your code here
